@@ -51,5 +51,6 @@ gem 'redis', '3.2.0'
 
 gem 'newrelic_rpm'
 gem 'whenever', :require => false
-gem 'puma'
+gem 'thin'
+# gem 'puma'
 gem 'logging-rails'

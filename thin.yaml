@@ -1,0 +1,11 @@
+environment: development
+address: 10.1.60.47
+port: 3000
+chdir: /home/leandro/ruby/websocket
+pid: tmp/thin.pid
+rackup: /home/leandro/ruby/websocket/config.ru
+log: /home/leandro/ruby/websocket/log/server.log
+max_conns: 2056
+timeout: 30
+max_persistent_conns: 1024
+daemonize: true
