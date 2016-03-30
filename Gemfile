@@ -52,3 +52,4 @@ gem 'redis', '3.2.0'
 gem 'newrelic_rpm'
 gem 'whenever', :require => false
 gem 'puma'
+gem 'logging-rails'

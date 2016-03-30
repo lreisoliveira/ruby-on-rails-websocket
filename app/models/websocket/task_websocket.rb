@@ -1,9 +1,8 @@
 module Websocket
   class Task
 
-    def self.send(evento_id)
-      puts evento_id.class
-      WebsocketRails['canal'].trigger('evento', 'resposta')
+    def send(evento_id)
+      WebsocketRails['canal'].trigger('evento', { narracao: 'aeeeeeeeeeeee' })
     end
 
   end

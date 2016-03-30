@@ -6,7 +6,7 @@ WebsocketRails.setup do |config|
   # config.log_level = :debug
 
   # Uncomment to change the default log file path.
-  # config.log_path = "#{Rails.root}/log/websocket_rails.log"
+  config.log_path = "#{Rails.root}/log/websocket_rails.log"
 
   # Set to true if you wish to log the internal websocket_rails events
   # such as the keepalive `websocket_rails.ping` event.
@@ -15,7 +15,7 @@ WebsocketRails.setup do |config|
   # Change to true to enable standalone server mode
   # Start the standalone server with rake websocket_rails:start_server
   # * Requires Redis
-  #config.standalone = false
+  # config.standalone = false
 
   # Change to true to enable channel synchronization between
   # multiple server instances.
@@ -58,6 +58,6 @@ WebsocketRails.setup do |config|
   # Supporting HTTP streaming on Internet Explorer versions 8 & 9
   # requires CORS to be enabled for GET "/websocket" request.
   # List here the origin domains allowed to perform the request.
-  # config.allowed_origins = ['http://localhost:3000']
+  config.allowed_origins = ['http://localhost:3000']
 
 end
