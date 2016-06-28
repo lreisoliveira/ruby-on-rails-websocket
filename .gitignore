@@ -20,5 +20,6 @@ Gemfile.lock
 
 # Arquivos PhpStorm e RubyMine
 .idea/*
+.idea
 dump.rdb
 
