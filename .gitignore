@@ -14,4 +14,11 @@
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
-/tmp
+/tmpi
+
+Gemfile.lock
+
+# Arquivos PhpStorm e RubyMine
+.idea/*
+dump.rdb
+
