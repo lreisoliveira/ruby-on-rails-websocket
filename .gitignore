@@ -22,4 +22,5 @@ Gemfile.lock
 .idea/*
 .idea
 dump.rdb
+tmp/*
 

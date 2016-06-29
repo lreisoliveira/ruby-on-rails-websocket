@@ -3,7 +3,7 @@ WebsocketRails.setup do |config|
   # Uncomment to override the default log level. The log level can be
   # any of the standard Logger log levels. By default it will mirror the
   # current Rails environment log level.
-  # config.log_level = :debug
+  config.log_level = :error
 
   # Uncomment to change the default log file path.
   config.log_path = "#{Rails.root}/log/websocket_rails.log"
@@ -20,7 +20,7 @@ WebsocketRails.setup do |config|
   # Change to true to enable channel synchronization between
   # multiple server instances.
   # * Requires Redis.
-  config.synchronize = true
+  config.synchronize = CONFIG['redis']['synchronize']
 
   # Prevent Thin from daemonizing (default is true)
   # config.daemonize = false
@@ -28,7 +28,7 @@ WebsocketRails.setup do |config|
   # Uncomment and edit to point to a different redis instance.
   # Will not be used unless standalone or synchronization mode
   # is enabled.
-  config.redis_options = {:host => 'localhost', :port => '6379'}
+  config.redis_options = {:host => CONFIG['redis']['host'] , :port => CONFIG['redis']['porta']}
 
   # By default, all subscribers in to a channel will be removed
   # when that channel is made private. If you don't wish active
@@ -58,6 +58,6 @@ WebsocketRails.setup do |config|
   # Supporting HTTP streaming on Internet Explorer versions 8 & 9
   # requires CORS to be enabled for GET "/websocket" request.
   # List here the origin domains allowed to perform the request.
-  config.allowed_origins = ['http://10.1.60.47:3000']
+  # config.allowed_origins = ['http://10.1.60.47:3000']
 
 end
