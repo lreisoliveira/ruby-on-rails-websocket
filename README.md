@@ -88,3 +88,22 @@ Executar após **redis-server**
 ```
 thin -C config/thin.yml start
 ```
+
+## Tunning
+
+Há um limite de conexões simultâneas de acordo com o sevidor onde o sistema está instalado e para melhorar estes números é necessário
+alterar configurações do kernel. Abaixo segue alguns links de referência.
+
+- https://easyengine.io/tutorials/linux/increase-open-files-limit/
+
+- http://stackoverflow.com/questions/11683850/how-much-memory-could-vm-use-in-linux
+
+- http://www.phoenixframework.org/blog/the-road-to-2-million-websocket-connections
+
+Alterações realizadas em Ubuntu 16.04 no arquivo abaixo, encontra-se na raiz deste projeto com o nome **limits.conf** 
+
+No Ubuntu fica em
+
+```
+vim /etc/security/limits.conf
+```
