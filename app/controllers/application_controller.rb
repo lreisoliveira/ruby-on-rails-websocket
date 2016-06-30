@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   def index
 
-    resposta = {'mensagem': (1..99999).to_a.sample }
+    resposta = {'mensagem': params[:mensagem].to_s }
     WebsocketRails['canal'].trigger('evento', resposta)
 
     return render json: resposta, status: :ok

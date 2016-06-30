@@ -89,6 +89,21 @@ Executar após **redis-server**
 thin -C config/thin.yml start
 ```
 
+## Testando o envio de mensagem
+
+Acessar a URL
+
+```
+http://localhost:3000/enviar?mensagem=1234567890
+```
+
+onde http://localhost:3000 é o dns:porta padrão do rails. A porta pode ser alterada em 
+
+```
+/config/thin.yml
+```
+
+
 ## Tunning
 
 Há um limite de conexões simultâneas de acordo com o sevidor onde o sistema está instalado e para melhorar estes números é necessário
