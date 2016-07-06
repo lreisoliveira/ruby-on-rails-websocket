@@ -12,10 +12,6 @@ require: []
 timeout: 30
 wait: 30
 daemonize: true
-#threaded: true
-#threadpool_size: 20
 no-epoll: true
 tag: aovivo-eventos-api
-#servers: 1
 onebyone: true
-#socket: tmp/sockets/thin.sock

@@ -4,11 +4,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def index
-
     resposta = {'mensagem': params[:mensagem].to_s }
     WebsocketRails['canal'].trigger('evento', resposta)
 
-    return render json: resposta, status: :ok
+    render json: resposta, status: :ok
   end
 
 end
