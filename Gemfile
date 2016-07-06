@@ -13,8 +13,8 @@ group :development do
 end
 
 gem 'eventmachine', '1.2.0.1'
-gem 'websocket-rails'
 gem 'faye-websocket', '0.10.0'
+gem 'websocket-rails'
 gem 'redis', '3.3.0'
 gem 'thin'
 gem 'rack-cors', :require => 'rack/cors'
