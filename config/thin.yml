@@ -12,6 +12,6 @@ require: []
 timeout: 30
 wait: 30
 daemonize: true
-no-epoll: true
 tag: aovivo-eventos-api
 onebyone: true
+no-epoll: true

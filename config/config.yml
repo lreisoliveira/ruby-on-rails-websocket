@@ -1,22 +1,16 @@
 development:
-  websocket:
-    canal: eventos
   redis:
     host: localhost
     porta: 6379
     synchronize: false
 
 test:
-  websocket:
-    canal: eventos
   redis:
     host: localhost
     porta: 6379
     synchronize: false
 
 production:
-  websocket:
-    canal: eventos
   redis:
     host: localhost
     porta: 6379
